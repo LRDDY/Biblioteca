@@ -23,7 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', ConsultaView.as_view(), name='livros'),
     #path('reserva/', ReservaView.as_view(), name='reserva'),
-    path('delete/<int:id>/', DeleteLivroView.as_view(), name='delete'),
     path('', IndexView.as_view(), name='index'),
     path('livros/', LivrosView.as_view(), name='livros'),
     #path('reserva/', EmprestimoView.as_view(), name='reserva'),
@@ -32,5 +31,5 @@ urlpatterns = [
     path('editor/', EditorasView.as_view(), name='editora'),
     path('leitor/', LeitoresView.as_view(), name='leitor'),
     path('genero/', GenerosView.as_view(), name='genero'),
-    path('editar/<int:id>/', EditarLivroView.as_view(), name='editar'),
+
 ]

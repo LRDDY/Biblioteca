@@ -84,8 +84,6 @@ aria-label="Toggle navigation">
             <th scope="col">Preço</th>
             <th scope="col">Data Publicação</th>
             <th scope="col">Status</th>
-            <th scope="col">Excluir</th>
-            <th scope="col">Editar</th>
         </tr>
     </thead>
     <tbody>
@@ -97,9 +95,7 @@ aria-label="Toggle navigation">
             <td>{{livros.genero}}</td>
             <td>{{ livros.preco }}</td>
             <td>{{ livros.data_pub }}</td>
-            <td>{{ livros.status }}</td>
-            <td><a href="delete/{{ livros.id }}" class="btn btn-danger">Excluir</a></td>
-            <td><a href="editar/{{ livros.id }}" class="btn btn-warning">Editar</a></td>          
+            <td>{{ livros.status }}</td>  
         </tr>
         {% endfor %}
     </tbody>
